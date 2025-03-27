@@ -1,0 +1,31 @@
+guid: 67ed8271-59f8-493e-8cf1-864c3c110bcd
+liveboard:
+  name: ruchi.anand@thoughtspot.com's first Liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: User name
+      tables:
+      - id: Product Usage
+        name: Product Usage
+        fqn: 9a527010-0a08-4b54-9700-e6da0a82a084
+      search_query: "[User name]"
+      answer_columns:
+      - name: User name
+      table:
+        table_columns:
+        - column_id: User name
+          show_headline: false
+        ordered_column_ids:
+        - User name
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: User name
+        axis_configs:
+        - "y":
+          - User name
+        client_state: ""
+      display_mode: TABLE_MODE
+    viz_guid: 053e87e8-733a-423a-91bb-1cec645a2b87
