@@ -1,0 +1,28 @@
+guid: c277c96e-a74b-43d5-b152-04c4e4ee07e3
+answer:
+  name: Answer description
+  tables:
+  - id: Product Usage
+    name: Product Usage
+    fqn: 9a527010-0a08-4b54-9700-e6da0a82a084
+  search_query: "[Answer description]"
+  answer_columns:
+  - name: Answer description
+  table:
+    table_columns:
+    - column_id: Answer description
+      show_headline: false
+    ordered_column_ids:
+    - Answer description
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: KPI
+    chart_columns:
+    - column_id: Answer description
+    axis_configs:
+    - "y":
+      - Answer description
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Answer description\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"67b1aee2-d2b1-45a9-8ddb-e3303186d11c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Answer description\"],\"isOpposite\": false}},{\"id\": \"f7a7888d-37c8-42c4-b420-85123f3aabdc\",\"properties\": {\"axisType\": \"X\"}}]}"
+  display_mode: TABLE_MODE
