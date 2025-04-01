@@ -1,0 +1,78 @@
+guid: 8c4d07f9-6d26-4838-a743-109c63fc180d
+answer:
+  name: Copy of Alert across attributes answer - WAU Last Week
+  description: "Weekly Active Users, last week"
+  tables:
+  - id: "TS: BI Server"
+    name: "TS: BI Server"
+    fqn: eaab6de7-c556-468c-8b4b-ff6d78dd3ecf
+  formulas:
+  - id: .int domain Users
+    name: .int domain Users
+    expr: "contains ( [User] , \".int\" )"
+    was_auto_generated: false
+  - id: Percentage Change
+    name: Percentage Change
+    expr: "( [WAU Last Week (Week of 03/17/2025)] - [WAU Last Week (Week of 03/10/2025)] ) / [WAU Last Week (Week of 03/10/2025)]"
+    was_auto_generated: false
+  - id: WAU Last Week (Week of 03/10/2025)
+    name: WAU Last Week (Week of 03/10/2025)
+    expr: "ifnull ( group_aggregate ( unique count ( [User] ) , query_groups ( ) , query_filters ( ) + { start_of_week ( [Timestamp] ) = [comparison_date] } ) , 0 )"
+    was_auto_generated: false
+  - id: WAU Last Week (Week of 03/17/2025)
+    name: WAU Last Week (Week of 03/17/2025)
+    expr: "ifnull ( group_aggregate ( unique count ( [User] ) , query_groups ( ) , query_filters ( ) + { start_of_week ( [Timestamp] ) = [latest_date] } ) , 0 )"
+    was_auto_generated: false
+  search_query: "[Timestamp].'last 4 weeks' [.int domain Users] = false [User] [WAU Last Week (Week of 03/17/2025)] [WAU Last Week (Week of 03/10/2025)] [Percentage Change] sort by [Percentage Change] descending"
+  answer_columns:
+  - name: Percentage Change
+    format:
+      category: PERCENTAGE
+      percentageFormatConfig:
+        decimals: 2.0
+  - name: User
+  - name: WAU Last Week (Week of 03/10/2025)
+  - name: WAU Last Week (Week of 03/17/2025)
+  table:
+    table_columns:
+    - column_id: Percentage Change
+      show_headline: false
+    - column_id: User
+      show_headline: false
+    - column_id: WAU Last Week (Week of 03/10/2025)
+      show_headline: false
+    - column_id: WAU Last Week (Week of 03/17/2025)
+      show_headline: false
+    ordered_column_ids:
+    - User
+    - WAU Last Week (Week of 03/17/2025)
+    - WAU Last Week (Week of 03/10/2025)
+    - Percentage Change
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Percentage Change\",\"columnProperty\": {\"conditionalFormatting\": {\"rows\": [{\"operator\": \"LESS_THAN_EQUAL_TO\",\"value\": \"-0.05\",\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#FCE9EB\"},\"comparisonType\": \"VALUE_BASED\",\"isHighlightRow\": false},{\"operator\": \"GREATER_THAN_EQUAL_TO\",\"value\": \"0.05\",\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#E6F8F2\"},\"comparisonType\": \"VALUE_BASED\",\"isHighlightRow\": false}]}}}]}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Percentage Change
+    - column_id: User
+    - column_id: WAU Last Week (Week of 03/10/2025)
+    - column_id: WAU Last Week (Week of 03/17/2025)
+    axis_configs:
+    - x:
+      - User
+      "y":
+      - WAU Last Week (Week of 03/17/2025)
+      - WAU Last Week (Week of 03/10/2025)
+      - Percentage Change
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"User\",\"columnProperty\": {}},{\"columnId\": \"WAU Last Week (Week of 03/17/2025)\",\"columnProperty\": {}},{\"columnId\": \"WAU Last Week (Week of 03/10/2025)\",\"columnProperty\": {}},{\"columnId\": \"Percentage Change\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"0f974674-a524-411c-81ef-d84e78c9508a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"WAU Last Week (Week of 03/17/2025)\"],\"isOpposite\": false}},{\"id\": \"26402e76-d148-4f2c-a7b6-9472bead7b47\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"WAU Last Week (Week of 03/10/2025)\"],\"isOpposite\": true}},{\"id\": \"bedf08e4-c319-4301-b38e-9f13c6c18f8b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Percentage Change\"],\"isOpposite\": true}},{\"id\": \"a3655a6d-4680-4894-86eb-6c12cfec949f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"User\"]}}]}"
+  display_mode: TABLE_MODE
+  parameters:
+  - id: f4637aa7-a156-470e-8cb7-0dbf30feb071
+    name: comparison_date
+    data_type: DATE
+    default_value: "null"
+  - id: 9e0f5b70-fbc6-461a-8e9e-b814d70ce3af
+    name: latest_date
+    data_type: DATE
+    default_value: "null"
