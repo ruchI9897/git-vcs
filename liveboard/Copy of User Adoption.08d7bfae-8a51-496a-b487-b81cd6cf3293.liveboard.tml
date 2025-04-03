@@ -1136,9 +1136,9 @@ liveboard:
         custom_name: '# of Days Logged In'
       - name: Hour(Last Login)
       - name: User
-      - name: User Actions(User Action contains answer)
+      - name: User Actions(user action contains answer)
         custom_name: Search Interactions
-      - name: User Actions(User Action contains pinboard)
+      - name: User Actions(user action contains pinboard)
         custom_name: Liveboard Interactions
       table:
         table_columns:
@@ -1148,34 +1148,34 @@ liveboard:
           show_headline: false
         - column_id: User
           show_headline: false
-        - column_id: User Actions(User Action contains answer)
+        - column_id: User Actions(user action contains answer)
           show_headline: false
-        - column_id: User Actions(User Action contains pinboard)
+        - column_id: User Actions(user action contains pinboard)
           show_headline: false
         ordered_column_ids:
         - Hour(Last Login)
         - User
-        - User Actions(User Action contains pinboard)
+        - User Actions(user action contains pinboard)
         - '# of days logged in (Last 6 Months)'
-        - User Actions(User Action contains answer)
+        - User Actions(user action contains answer)
         client_state: "{\"widthState\":{},\"wrapTableHeader\":true,\"ordered_column_ids\":[\"User\",\"Hour(Last Login)\",\"0847b792-c8a3-5ff0-a61e-fe30dff5e03d\",\"9f9a5386-e445-57f4-83b5-6c1cf82b9ab0\",\"c781878f-07e4-4ff9-a2b5-b8b6cef33899\"]}"
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"orderedColumnIds\": [\"User\",\"Hour(Last Login)\",\"# of days logged in (Last 6 Months)\",\"User Actions(User Action contains pinboard)\",\"User Actions(User Action contains answer)\"],\"columnProperties\": [{\"columnId\": \"Hour(Last Login)\",\"columnProperty\": {}},{\"columnId\": \"User\",\"columnProperty\": {}}]}"
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"orderedColumnIds\": [\"User\",\"Hour(Last Login)\",\"# of days logged in (Last 6 Months)\",\"User Actions(user action contains pinboard)\",\"User Actions(user action contains answer)\"],\"columnProperties\": [{\"columnId\": \"Hour(Last Login)\",\"columnProperty\": {}},{\"columnId\": \"User\",\"columnProperty\": {}}]}"
       chart:
         type: LINE
         chart_columns:
         - column_id: '# of days logged in (Last 6 Months)'
         - column_id: Hour(Last Login)
         - column_id: User
-        - column_id: User Actions(User Action contains answer)
-        - column_id: User Actions(User Action contains pinboard)
+        - column_id: User Actions(user action contains answer)
+        - column_id: User Actions(user action contains pinboard)
         axis_configs:
         - x:
           - Hour(Last Login)
           "y":
-          - User Actions(User Action contains pinboard)
-          - User Actions(User Action contains answer)
+          - User Actions(user action contains pinboard)
+          - User Actions(user action contains answer)
         client_state: "{\"chartProperties\":{\"gridLines\":{},\"showRoundedNumbers\":true,\"responsiveLayoutPreference\":3.0,\"chartSpecific\":{}},\"axisProperties\":{\"65b27e4e-aa33-4e93-85da-d4a3f3d718ea\":{\"linkedColumns\":[\"0847b792-c8a3-5ff0-a61e-fe30dff5e03d\"],\"axisType\":\"Y\",\"isOpposite\":false},\"6bdfa3ab-00b2-491a-a505-99539f566bd6\":{\"linkedColumns\":[\"9f9a5386-e445-57f4-83b5-6c1cf82b9ab0\"],\"axisType\":\"Y\",\"isOpposite\":true},\"f6b2c593-6b05-4b16-8c2f-4af855d24962\":{\"linkedColumns\":[\"c781878f-07e4-4ff9-a2b5-b8b6cef33899\"],\"axisType\":\"Y\",\"isOpposite\":true},\"4d4d5d7f-c85b-4f37-b0a2-2d85e127f06a\":{\"linkedColumns\":[\"Hour(Last Login)\"],\"axisType\":\"X\"}},\"version\":\"V3\",\"columnProperties\":{\"Hour(Last Login)\":{},\"User\":{},\"0847b792-c8a3-5ff0-a61e-fe30dff5e03d\":{},\"9f9a5386-e445-57f4-83b5-6c1cf82b9ab0\":{},\"c781878f-07e4-4ff9-a2b5-b8b6cef33899\":{}}}"
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Hour(Last Login)\",\"columnProperty\": {}},{\"columnId\": \"User\",\"columnProperty\": {}},{\"columnId\": \"User Actions(User Action contains pinboard)\",\"columnProperty\": {}},{\"columnId\": \"# of days logged in (Last 6 Months)\",\"columnProperty\": {}},{\"columnId\": \"User Actions(User Action contains answer)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"8ea3dbc5-840e-4bbf-a01d-1ce1893c658a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"User Actions(User Action contains pinboard)\"],\"isOpposite\": false}},{\"id\": \"32b78e23-4496-4497-94dc-56f75c87dc91\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"User Actions(User Action contains answer)\"],\"isOpposite\": true}},{\"id\": \"8d42226c-6763-4c13-8ddf-e9aa531f7d80\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Hour(Last Login)\"]}}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Hour(Last Login)\",\"columnProperty\": {}},{\"columnId\": \"User\",\"columnProperty\": {}},{\"columnId\": \"User Actions(user action contains pinboard)\",\"columnProperty\": {}},{\"columnId\": \"# of days logged in (Last 6 Months)\",\"columnProperty\": {}},{\"columnId\": \"User Actions(user action contains answer)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"8ea3dbc5-840e-4bbf-a01d-1ce1893c658a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"User Actions(user action contains pinboard)\"],\"isOpposite\": false}},{\"id\": \"32b78e23-4496-4497-94dc-56f75c87dc91\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"User Actions(user action contains answer)\"],\"isOpposite\": true}},{\"id\": \"8d42226c-6763-4c13-8ddf-e9aa531f7d80\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Hour(Last Login)\"]}}]}"
       display_mode: TABLE_MODE
       client_state: "{\"version\":\"V2\"}"
     viz_guid: 1aa9d493-b889-4bbd-a3a6-a20c0a06df00
